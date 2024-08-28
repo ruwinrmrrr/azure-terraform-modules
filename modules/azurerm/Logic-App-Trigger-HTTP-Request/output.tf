@@ -24,6 +24,6 @@ output "logic_app_trigger_http_request_name" {
 }
 
 output "logic_app_action_http_callback_url" {
-  depends_on = [azurerm_logic_app_action_http.logic_app_trigger_http_request]
+  depends_on = [azurerm_logic_app_trigger_http_request.logic_app_trigger_http_request]
   value      = azurerm_logic_app_trigger_http_request.logic_app_trigger_http_request.callback_url
 }
