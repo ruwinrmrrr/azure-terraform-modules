@@ -25,5 +25,5 @@ output "logic_app_action_http_name" {
 
 output "logic_app_action_http_callback_url" {
   depends_on = [azurerm_logic_app_action_http.logic_app_action_http]
-  value      = azurerm_logic_app_action_http.logic_app_action_http.logic_app_action_http_callback_url
+  value      = azurerm_logic_app_action_http.logic_app_action_http.callback_url
 }
