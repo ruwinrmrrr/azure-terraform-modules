@@ -23,4 +23,6 @@ resource "azurerm_logic_app_action_http" "logic_app_action_http" {
   logic_app_id = var.logic_app_id
   method       = var.logic_app_action_http_method
   uri          = var.logic_app_action_http_uri
+  body         = var.logic_app_action_http_body
+  headers      = var.logic_app_action_http_headers
 }

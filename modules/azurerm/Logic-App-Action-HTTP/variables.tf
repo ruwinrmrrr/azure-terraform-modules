@@ -37,3 +37,13 @@ variable "logic_app_action_http_uri" {
   description = "The URI which will be called when the HTTP Action is triggered"
   type        = string
 }
+
+variable "logic_app_action_http_body" {
+  description = "The HTTP Body that should be sent to the uri when this HTTP Action is triggered"
+  type        = string
+}
+
+variable "logic_app_action_http_headers" {
+  description = "A map of Key-Value Pairs that should be sent to the uri when this HTTP Action is triggered"
+  type        = map(string)
+}
