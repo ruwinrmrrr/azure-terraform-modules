@@ -29,7 +29,7 @@ variable "logic_app_workflow_id" {
 }
 
 variable "logic_app_trigger_http_request_schema" {
-  description = "Path to the JSON blob defining the Schema of the incoming request"
+  description = "JSON blob defining the Schema of the incoming request"
   type        = string
-  default     = null
+  default     = ""
 }
