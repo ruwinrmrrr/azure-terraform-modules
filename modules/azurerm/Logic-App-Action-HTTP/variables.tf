@@ -47,3 +47,9 @@ variable "logic_app_action_http_headers" {
   description = "A map of Key-Value Pairs that should be sent to the uri when this HTTP Action is triggered"
   type        = map(string)
 }
+
+variable "logic_app_action_http_queries" {
+  description = "Map of Key-Value Pairs that should be sent to the uri when this HTTP Action is triggered"
+  type = map(string)
+  default = null
+}

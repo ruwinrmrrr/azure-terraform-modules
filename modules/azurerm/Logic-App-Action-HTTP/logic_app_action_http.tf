@@ -25,4 +25,5 @@ resource "azurerm_logic_app_action_http" "logic_app_action_http" {
   uri          = var.logic_app_action_http_uri
   body         = var.logic_app_action_http_body
   headers      = var.logic_app_action_http_headers
+  queries = var.logic_app_action_http_queries
 }
