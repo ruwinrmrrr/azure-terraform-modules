@@ -18,7 +18,7 @@ resource "azurerm_storage_account" "storage_account" {
   account_replication_type         = var.account_replication_type
   min_tls_version                  = "TLS1_2"
   account_kind                     = "StorageV2"
-  https_traffic_only_enabled       = true
+  # https_traffic_only_enabled       = true
   allow_nested_items_to_be_public  = var.allow_nested_items_to_be_public
   public_network_access_enabled    = var.public_network_access_enabled
   cross_tenant_replication_enabled = var.cross_tenant_replication_enabled
